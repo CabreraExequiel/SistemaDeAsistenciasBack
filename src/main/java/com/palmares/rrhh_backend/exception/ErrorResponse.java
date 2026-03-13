@@ -15,8 +15,8 @@ public class ErrorResponse {
     public ErrorResponse(LocalDateTime timestamp, int status, String error, String message) {
         this.timestamp = timestamp;
         this.status = status;
+       this.message = message;
         this.error = error;
-        this.message = message;
     }
 
     public LocalDateTime getTimestamp() {
@@ -26,6 +26,7 @@ public class ErrorResponse {
     public void setTimestamp(LocalDateTime timestamp) {
         this.timestamp = timestamp;
     }
+
 
     public int getStatus() {
         return status;
