@@ -11,4 +11,5 @@ public interface TurnoRepository extends JpaRepository<Turno, Integer> {
     Optional<Turno> findByCodigo(String codigo);
 
     List<Turno> findByActivo(Boolean activo);
+
 }
